@@ -11,27 +11,76 @@
 
 <div class="container">
     <h1>Profile</h1>
-    <p>
-        Name: NatureExplorer123
-    </p>
-
+    <div class="profileInformation">
+        <p>
+            Name: NatureExplorer123
+        </p>
+    </div>
+    <br>
+    <h2>Sightings</h2>
     <div class="profileSightings ">
-        <h1>Sightings</h1>
-        {#each sightings as sighting}
+        {#each sightings.reverse() as sighting}
             {#if sighting.username == "NatureExplorer123"}
-            <div class="list-item">
-                <span>{sighting.timestamp} by {sighting.username}</span>
-                <h2>{sighting.title}</h2>
-                <span>{sighting.description}</span>
-            </div>
+                <div class="list-item">
+                    <span>{sighting.timestamp} by {sighting.username}</span>
+                    <h2>{sighting.title}</h2>
+                    <span>{sighting.description}</span>
+                </div>
+                <!--{#if sighting.type === "DANGER"}-->
+                <!--    <div class="list-item danger">-->
+                <!--        <span>{sighting.timestamp} by {sighting.username}</span>-->
+                <!--        <h2>{sighting.title}</h2>-->
+                <!--        <span>{sighting.description}</span>-->
+                <!--    </div>-->
+                <!--{/if}-->
+                <!--{#if sighting.type === "PHOTO"}-->
+                <!--    <div class="list-item photo">-->
+                <!--        <span>{sighting.timestamp} by {sighting.username}</span>-->
+                <!--        <h2>{sighting.title}</h2>-->
+                <!--        <span>{sighting.description}</span>-->
+                <!--    </div>-->
+                <!--{/if}-->
+                <!--{#if sighting.type === "EXOTIC"}-->
+                <!--    <div class="list-item exotic">-->
+                <!--        <span>{sighting.timestamp} by {sighting.username}</span>-->
+                <!--        <h2>{sighting.title}</h2>-->
+                <!--        <span>{sighting.description}</span>-->
+                <!--    </div>-->
+                <!--{/if}-->
+
             {/if}
         {/each}
     </div>
 </div>
 
 <style>
-    .container{
+    .container {
+        width: 50%;
+        height: 100%;
         padding: 5px;
         padding-left: 2rem;
     }
+    .profileSightings{
+        display: grid;
+    }
+
+    .list-item {
+        border: 1px solid black;
+        padding: 1rem;
+        margin: 1rem;
+
+    }
+    /*.danger {*/
+    /*    border: 3px solid red;*/
+    /*    border-radius: 25px;*/
+    /*}*/
+    /*.photo {*/
+    /*     border: 3px solid green;*/
+    /*     border-radius: 25px;*/
+    /* }*/
+
+    /*.exotic {*/
+    /*    border: 3px solid gold;*/
+    /*    border-radius: 25px;*/
+    /*}*/
 </style>

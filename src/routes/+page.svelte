@@ -18,6 +18,11 @@
 		<Map markers={sightings.map((s) => ({ id: s.id, location: s.location }))} />
 	</div>
 	<div class="list-container">
+				<a href="/profile">
+					<button>
+					View Profile
+					</button>
+				</a>
 		<button on:click={showData}>Create new sighting</button>
 		<form method="POST" action="?/add" id="form" style="display: none">
 
@@ -79,7 +84,9 @@
 		margin: 8px;
 	}
 	button{
-		padding: 5px
+		padding: 5px;
+		width: 100%;
+
 	}
 
 </style>

@@ -8,9 +8,9 @@
 		<img alt="The project logo" src={logo} />
 	</a>
 		<span class="title">Jungle Hike Logger</span>
-		<a href="profile">
-			<img class="img-profile" src="src/lib/assets/profilePicture.jpeg" alt="Avatar">
-		</a>
+<!--		<a href="profile">-->
+<!--			<img class="img-profile" src="src/lib/assets/profilePicture.jpeg" alt="Avatar">-->
+<!--		</a>-->
 
 </nav>
 <div class="container">
@@ -43,8 +43,8 @@
 	.container {
 		height: calc(100% - var(--nav-height));
 	}
-	.img-profile{
-		border-radius: 50%;
+	/*.img-profile{*/
+	/*	border-radius: 50%;*/
 
-	}
+	/*}*/
 </style>
