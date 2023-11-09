@@ -19,8 +19,8 @@ export const actions = {
 				id: randomUUID(),
 				username: 'NatureExplorer123',
 				location: {
-					latitude: 51.1901512,
-					longitude: 4.4249487
+					latitude: formData.get('latitude'),
+					longitude: formData.get('longitude')
 				},
 				timestamp: new Date().toISOString(),
 				title: formData.get('title'),

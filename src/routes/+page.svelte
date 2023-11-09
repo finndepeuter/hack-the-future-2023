@@ -20,11 +20,19 @@
 	<div class="list-container">
 		<button on:click={showData}>Create new sighting</button>
 		<form method="POST" action="?/add" id="form" style="display: none">
+
 			<label for="title">Title</label>
 			<input type="text" name="title" id="title"/>
 
 			<label for="description">Description</label>
 			<input type="text" name="description" id="description"/>
+
+			<br>
+			<label for="latitude">Latitude</label>
+			<input type="number" name="latitude" id="latitude"/>
+			<br>
+			<label for="longitude">Latitude</label>
+			<input type="number" name="longitude" id="longitude"/>
 
 			<button>Save</button>
 		</form>
