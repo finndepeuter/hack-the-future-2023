@@ -25,6 +25,11 @@
 			<label for="description">Description</label>
 			<input type="text" name="description" id="description"/>
 			<br>
+			<label for="latitude">Latitude</label>
+			<input type="number" name="latitude" id="latitude"/>
+			<br>
+			<label for="longitude">Latitude</label>
+			<input type="number" name="longitude" id="longitude"/>
 			<button>Save</button>
 		</form>
 		<h1>Sightings</h1>
