@@ -1,10 +1,15 @@
 <script>
 	import logo from '$lib/assets/jhl3.jpeg';
+	// console.log(logo);
 </script>
 
 <nav>
-	<img alt="The project logo" src={logo} />
-	<span class="title">Jungle Hike Logger</span>
+		<img alt="The project logo" src={logo} />
+		<span class="title">Jungle Hike Logger</span>
+		<a href="profile">
+			<img class="img-profile" src="src/lib/assets/profilePicture.jpeg" alt="Avatar">
+		</a>
+
 </nav>
 <div class="container">
 	<slot />
@@ -35,5 +40,9 @@
 	}
 	.container {
 		height: calc(100% - var(--nav-height));
+	}
+	.img-profile{
+		border-radius: 50%;
+
 	}
 </style>

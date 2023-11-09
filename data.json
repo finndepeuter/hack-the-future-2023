@@ -19,6 +19,7 @@
         "latitude": -3.4653,
         "longitude": 29.8295
       },
+
       "type": "DANGER",
       "timestamp": "2023-10-02T12:05:00.000Z",
       "title": "Jaguar Sighting",
@@ -61,7 +62,18 @@
       "description": "Spotted a beautiful tiger near the riverbank during my jungle expedition. It was a breathtaking sight!"
     },
     {
-      "id": "0896556e-2cc7-4d17-bdfd-3aa61d07b700",
+      "id": "3930e172-1aee-45fc-a0dc-e95866c8a6c7",
+      "username": "NatureExplorer123",
+      "location": {
+        "latitude": 51.1901512,
+        "longitude": 4.4249487
+      },
+      "timestamp": "2023-11-09T09:45:32.156Z",
+      "title": "test",
+      "description": "test"
+    },
+    {
+"id": "0896556e-2cc7-4d17-bdfd-3aa61d07b700",
       "username": "NatureExplorer123",
       "location": {
         "latitude": "-15",

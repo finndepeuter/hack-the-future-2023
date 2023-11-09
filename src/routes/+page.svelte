@@ -23,7 +23,7 @@
 
 			<label for="title">Title</label>
 			<input type="text" name="title" id="title"/>
-
+			<br>
 			<label for="description">Description</label>
 			<input type="text" name="description" id="description"/>
 
@@ -48,6 +48,8 @@
 				</div>
 			</fieldset>
 			
+			<br>
+
 			<button>Save</button>
 		</form>
 		<h1>Sightings</h1>

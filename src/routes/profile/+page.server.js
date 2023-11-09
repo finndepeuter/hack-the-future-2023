@@ -2,6 +2,13 @@ import {db} from "$lib/db.js";
 import { randomUUID } from 'crypto';
 
 export const ssr = false;
+
+export async function load() {
+    const { sightings } = await db.getData('sightings');
+    return {
+        sightings
+    };
+}
 export const actions = {
     add: async ({ request }) => {
         const formData = await request.formData();
