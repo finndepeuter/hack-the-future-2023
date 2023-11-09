@@ -21,32 +21,27 @@
     <div class="profileSightings ">
         {#each sightings.reverse() as sighting}
             {#if sighting.username == "NatureExplorer123"}
-                <div class="list-item">
-                    <span>{sighting.timestamp} by {sighting.username}</span>
-                    <h2>{sighting.title}</h2>
-                    <span>{sighting.description}</span>
-                </div>
-                <!--{#if sighting.type === "DANGER"}-->
-                <!--    <div class="list-item danger">-->
-                <!--        <span>{sighting.timestamp} by {sighting.username}</span>-->
-                <!--        <h2>{sighting.title}</h2>-->
-                <!--        <span>{sighting.description}</span>-->
-                <!--    </div>-->
-                <!--{/if}-->
-                <!--{#if sighting.type === "PHOTO"}-->
-                <!--    <div class="list-item photo">-->
-                <!--        <span>{sighting.timestamp} by {sighting.username}</span>-->
-                <!--        <h2>{sighting.title}</h2>-->
-                <!--        <span>{sighting.description}</span>-->
-                <!--    </div>-->
-                <!--{/if}-->
-                <!--{#if sighting.type === "EXOTIC"}-->
-                <!--    <div class="list-item exotic">-->
-                <!--        <span>{sighting.timestamp} by {sighting.username}</span>-->
-                <!--        <h2>{sighting.title}</h2>-->
-                <!--        <span>{sighting.description}</span>-->
-                <!--    </div>-->
-                <!--{/if}-->
+                {#if sighting.type === "DANGER"}
+                    <div class="list-item danger">
+                        <span>{sighting.timestamp} by {sighting.username}</span>
+                        <h2>{sighting.title}</h2>
+                        <span>{sighting.description}</span>
+                    </div>
+                {/if}
+                {#if sighting.type === "PHOTO"}
+                    <div class="list-item photo">
+                        <span>{sighting.timestamp} by {sighting.username}</span>
+                        <h2>{sighting.title}</h2>
+                        <span>{sighting.description}</span>
+                    </div>
+                {/if}
+                {#if sighting.type === "EXOTIC"}
+                    <div class="list-item exotic">
+                        <span>{sighting.timestamp} by {sighting.username}</span>
+                        <h2>{sighting.title}</h2>
+                        <span>{sighting.description}</span>
+                    </div>
+                {/if}
 
             {/if}
         {/each}
@@ -55,13 +50,16 @@
 
 <style>
     .container {
-        width: 50%;
+        width: 100%;
         height: 100%;
         padding: 5px;
         padding-left: 2rem;
     }
     .profileSightings{
         display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding:1rem;
+
     }
 
     .list-item {
@@ -70,17 +68,17 @@
         margin: 1rem;
 
     }
-    /*.danger {*/
-    /*    border: 3px solid red;*/
-    /*    border-radius: 25px;*/
-    /*}*/
-    /*.photo {*/
-    /*     border: 3px solid green;*/
-    /*     border-radius: 25px;*/
-    /* }*/
+    .danger {
+        border: 3px solid red;
+        border-radius: 25px;
+    }
+    .photo {
+         border: 3px solid green;
+         border-radius: 25px;
+     }
 
-    /*.exotic {*/
-    /*    border: 3px solid gold;*/
-    /*    border-radius: 25px;*/
-    /*}*/
+    .exotic {
+        border: 3px solid gold;
+        border-radius: 25px;
+    }
 </style>
