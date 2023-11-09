@@ -94,6 +94,7 @@
 	.map-container {
 		width: 70%;
 		height: 100%;
+		
 	}
 
 	.list-container {

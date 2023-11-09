@@ -24,7 +24,7 @@
         })
     }
     export let type;
-    const icon = icons[type]
+    const icon = icons[type];
 	import { onMount, onDestroy } from 'svelte';
 	import L from 'leaflet';
     import redIcon from '$lib/assets/redIcon.png';
