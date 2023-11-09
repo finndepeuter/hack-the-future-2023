@@ -6,13 +6,27 @@
 		...s,
 		timestamp: formatter.format(new Date(s.timestamp))
 	}));
+
+
+
 </script>
+
 
 <div class="container">
 	<div class="map-container">
 		<Map markers={sightings.map((s) => ({ id: s.id, location: s.location }))} />
 	</div>
 	<div class="list-container">
+		<button ><a href="/newSighting">new sighting</a></button>
+		<form method="POST" action="?/add" >
+			<label for="title">Title</label>
+			<input type="text" name="title" id="title"/>
+			<br>
+			<label for="description">Description</label>
+			<input type="text" name="description" id="description"/>
+			<br>
+			<button>Save</button>
+		</form>
 		<h1>Sightings</h1>
 		{#each sightings as sighting}
 			<div class="list-item">
@@ -52,3 +66,4 @@
 		padding: 1rem;
 	}
 </style>
+
