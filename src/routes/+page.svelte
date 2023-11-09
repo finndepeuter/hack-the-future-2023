@@ -6,8 +6,9 @@
 		...s,
 		timestamp: formatter.format(new Date(s.timestamp))
 	}));
-
-
+	function showData() {
+		document.getElementById('form').style.display = "block";
+	}
 
 </script>
 
@@ -17,14 +18,14 @@
 		<Map markers={sightings.map((s) => ({ id: s.id, location: s.location }))} />
 	</div>
 	<div class="list-container">
-		<button ><a href="/newSighting">new sighting</a></button>
-		<form method="POST" action="?/add" >
+		<button on:click={showData}>Create new sighting</button>
+		<form method="POST" action="?/add" id="form" style="display: none">
 			<label for="title">Title</label>
 			<input type="text" name="title" id="title"/>
-			<br>
+
 			<label for="description">Description</label>
 			<input type="text" name="description" id="description"/>
-			<br>
+
 			<button>Save</button>
 		</form>
 		<h1>Sightings</h1>
@@ -65,5 +66,13 @@
 		border: 1px solid black;
 		padding: 1rem;
 	}
+
+	label, input, button{
+		margin: 8px;
+	}
+	button{
+		padding: 5px
+	}
+
 </style>
 
