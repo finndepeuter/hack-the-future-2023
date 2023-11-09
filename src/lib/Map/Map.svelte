@@ -27,7 +27,7 @@
 
 <div use:mapAction class="map">
 	{#each markers as marker (marker.id)}
-		<Marker latlng={marker.location} {map} />
+		<Marker latlng={marker.location} title={marker.title} {map}/>
 	{/each}
 </div>
 
