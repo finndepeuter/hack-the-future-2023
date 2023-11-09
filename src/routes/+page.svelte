@@ -25,20 +25,23 @@
 				</a>
 		<button on:click={showData}>Create new sighting</button>
 		<form method="POST" action="?/add" id="form" style="display: none">
-
+			<div class="form-input">
 			<label for="title">Title</label>
 			<input type="text" name="title" id="title"/>
-			<br>
+			</div>
+			<div class="form-input">
 			<label for="description">Description</label>
 			<input type="text" name="description" id="description"/>
-
-			<br>
+			</div>
+			<div class="form-input">
 			<label for="latitude">Latitude</label>
 			<input type="number" name="latitude" id="latitude"/>
-			<br>
+			</div>
+			<div class="form-input">
 			<label for="longitude">Longitude</label>
 			<input type="number" name="longitude" id="longitude"/>
-
+	</div>
+			<br>
 			<fieldset>
 				<legend>Type of sighting:</legend>
 				<div>
@@ -94,7 +97,8 @@
 	.map-container {
 		width: 70%;
 		height: 100%;
-		
+		padding: 20px;
+		background-color: lightgray;
 	}
 
 	.list-container {
@@ -108,6 +112,11 @@
 		border-left: 1px solid black;
 	}
 
+	.form-input {
+		display:flex;
+		flex-direction: column;
+	}
+
 	.list-item {
 		border: 1px solid black;
 		padding: 1rem;
@@ -117,9 +126,19 @@
 		margin: 8px;
 	}
 	button{
-		padding: 5px;
 		width: 100%;
+		background-color: white;
+		color: black;
+		border: 2px solid #008CBA;
+		padding: 16px 32px;
 
+	}
+
+	button:hover {
+		transition-duration: 0.4s;
+
+		background-color: #008CBA;
+		color: white;
 	}
 
 	.danger {
