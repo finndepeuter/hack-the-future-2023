@@ -15,7 +15,7 @@
 
 <div class="container">
 	<div class="map-container">
-		<Map markers={sightings.map((s) => ({ id: s.id, location: s.location, title: s.title}))} />
+		<Map markers={sightings.map((s) => ({ id: s.id, location: s.location, title: s.title ,type: s.type}))} />
 	</div>
 	<div class="list-container">
 				<a href="/profile">
