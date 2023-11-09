@@ -20,6 +20,7 @@
 	<div class="list-container">
 		<button on:click={showData}>Create new sighting</button>
 		<form method="POST" action="?/add" id="form" style="display: none">
+
 			<label for="title">Title</label>
 			<input type="text" name="title" id="title"/>
 
