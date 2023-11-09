@@ -23,7 +23,7 @@
 
 			<label for="title">Title</label>
 			<input type="text" name="title" id="title"/>
-
+			<br>
 			<label for="description">Description</label>
 			<input type="text" name="description" id="description"/>
 
@@ -33,7 +33,7 @@
 			<br>
 			<label for="longitude">Latitude</label>
 			<input type="number" name="longitude" id="longitude"/>
-
+			<br>
 			<button>Save</button>
 		</form>
 		<h1>Sightings</h1>
