@@ -7,6 +7,7 @@
         "latitude": -14.235,
         "longitude": -51.9253
       },
+      "type": "EXOTIC",
       "timestamp": "2023-10-03T08:20:00.000Z",
       "title": "Toucan Paradise",
       "description": "Visited an area filled with toucans of various species. Their vibrant beaks and playful behavior were a delight to observe."
@@ -18,6 +19,8 @@
         "latitude": -3.4653,
         "longitude": 29.8295
       },
+
+      "type": "DANGER",
       "timestamp": "2023-10-02T12:05:00.000Z",
       "title": "Jaguar Sighting",
       "description": "Had a rare sighting of a jaguar roaming in its natural habitat. Stayed still to admire this magnificent creature from afar."
@@ -29,6 +32,7 @@
         "latitude": 51.1901512,
         "longitude": 5.4249487
       },
+      "type": "PHOTO",
       "timestamp": "2023-10-11T10:30:00.000Z",
       "title": "Majestic Tiger Sighting",
       "description": "Spotted a beautiful tiger near the riverbank during my jungle expedition. It was a breathtaking sight!"
@@ -40,6 +44,7 @@
         "latitude": 51.1901512,
         "longitude": 7.1249487
       },
+      "type": "DANGER",
       "timestamp": "2023-10-29T13:50:07.332Z",
       "title": "Majestic Tiger Sighting",
       "description": "Spotted a beautiful tiger near the riverbank during my jungle expedition. It was a breathtaking sight!"
@@ -51,6 +56,7 @@
         "latitude": 49.1901112,
         "longitude": 8.1249487
       },
+      "type": "EXOTIC",
       "timestamp": "2023-10-29T13:52:10.596Z",
       "title": "Majestic Tiger Sighting",
       "description": "Spotted a beautiful tiger near the riverbank during my jungle expedition. It was a breathtaking sight!"
@@ -67,12 +73,13 @@
       "description": "test"
     },
     {
-      "id": "0896556e-2cc7-4d17-bdfd-3aa61d07b700",
+"id": "0896556e-2cc7-4d17-bdfd-3aa61d07b700",
       "username": "NatureExplorer123",
       "location": {
         "latitude": "-15",
         "longitude": "29"
       },
+      "type": "DANGER",
       "timestamp": "2023-11-09T09:53:16.523Z",
       "title": "test",
       "description": "test 2"
@@ -84,9 +91,35 @@
         "latitude": "-50",
         "longitude": "39"
       },
+      "type": "PHOTO",
       "timestamp": "2023-11-09T09:55:31.718Z",
       "title": "olifant",
       "description": "grote olifant"
+    },
+    {
+      "id": "cea06371-4cbf-4b2e-907e-f660269668ba",
+      "username": "NatureExplorer123",
+      "location": {
+        "latitude": "-13",
+        "longitude": "45"
+      },
+      "type": "PHOTO",
+      "timestamp": "2023-11-09T11:56:33.788Z",
+      "title": "Varken",
+      "description": "klein varkentje"
+    },
+    {
+      "id": "c897f21b-7f5d-4c13-b712-b6bffaef9820",
+      "username": "NatureExplorer123",
+      "location": {
+        "latitude": "18",
+        "longitude": "182"
+      },
+      "type": "PHOTO",
+      "timestamp": "2023-11-09T12:06:39.965Z",
+      "title": "ZEEKOE",
+      "description": "zeekoe"
     }
+
   ]
 }

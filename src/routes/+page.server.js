@@ -13,6 +13,8 @@ export async function load() {
 export const actions = {
 	add: async ({ request }) => {
 		const formData = await request.formData();
+		console.log(formData);
+		console.log('test');
 		await db.push(
 			'/sightings[]',
 			{
@@ -22,6 +24,7 @@ export const actions = {
 					latitude: formData.get('latitude'),
 					longitude: formData.get('longitude')
 				},
+				type: formData.get('type'),
 				timestamp: new Date().toISOString(),
 				title: formData.get('title'),
 				description: formData.get('description')
@@ -30,3 +33,4 @@ export const actions = {
 		);
 	}
 };
+
