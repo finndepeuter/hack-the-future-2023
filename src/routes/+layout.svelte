@@ -4,7 +4,9 @@
 </script>
 
 <nav>
+	<a href="/">
 		<img alt="The project logo" src={logo} />
+	</a>
 		<span class="title">Jungle Hike Logger</span>
 		<a href="profile">
 			<img class="img-profile" src="src/lib/assets/profilePicture.jpeg" alt="Avatar">
